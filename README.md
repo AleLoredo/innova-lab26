@@ -31,6 +31,7 @@ Moodle inicia un flujo OAuth 2.0 con la app y esta recibe un JWT firmado con tod
 La app valida la firma usando la clave pública de Moodle.
 Con esto ya sabemos quien es el usuario, qué rol tiene (estudiante, docente, admin) y desde qué curso viene.
 
+```bash
 Usuario click en Moodle
         │
         ▼
@@ -56,10 +57,12 @@ Usuario click en Moodle
         ▼
 [5] Sesión creada
     Ya sabés: nombre, email, rol, curso_id
-
+```
 
 ### El formato del |JWT
 
+
+```bash
     {
   "sub": "user-id-unico",
   "email": "alumno@universidad.edu",
@@ -75,3 +78,4 @@ Usuario click en Moodle
     "id": "recurso-456"
   }
 }
+```
