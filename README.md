@@ -63,6 +63,7 @@ Usuario click en Moodle
 
 
 ```bash
+{
     {
   "sub": "user-id-unico",
   "email": "alumno@universidad.edu",
